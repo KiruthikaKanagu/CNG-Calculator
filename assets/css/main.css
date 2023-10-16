@@ -1,0 +1,9 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-input{
+   @apply bg-gray-100 px-2 py-1 rounded outline-none w-full
+}
