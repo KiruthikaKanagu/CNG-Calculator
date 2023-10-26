@@ -9,36 +9,45 @@
 </head>
 
 <body class="bg-gradient-to-r from-purple-600 to-red-600 font-robotto h-auto flex justify-center items-center">
-  <div class="bg-black sm:bg-white max-w-lg mx-auto p-7 shadow rounded mt-5 ">
+  <div class=" sm:bg-white mx-auto p-7 shadow rounded mt-5">
     <div class="text-center">
       <h1 class="font-semibold text-lg text-green-600">CNG Cost Calculator</h1>
       <p>Simple tool to calculate the cost</p>
     </div>
-    <div class="my-5 space-y-4">
+    <div class="my-5 space-y-4  calculation">
 
       <div class="space-y-2">
-        <label for="Trip_dist" class="font-semibold text-sm">Trip Distance <span class="text-red-500">*</span></label>
-        <input class="form-input" id="Trip_dist" type="number" required
-          placeholder="Enter Trip Distance">
+        <label for="trip-dist" class="form-label font-semibold text-sm">Trip Distance <span
+            class="text-red-500">*</span></label>
+        <input id="trip-dist" type="number" placeholder="Trip Distance" class="form-input" required />
       </div>
 
       <div class="space-y-2">
-        <label for="Fuel Efficiency" class="font-semibold text-sm">Fuel Efficiency <span class="text-red-500">*</span></label>
-        <input class="form-input" type="number" placeholder="Fuel Efficiency" required>
+        <label for="Fuel Efficiency" class="font-semibold text-sm form-label">Fuel Efficiency <span
+            class="text-red-500">*</span></label>
+        <input class="form-input" id="fuel_efficiency" type="number" placeholder="Fuel Efficiency" required>
       </div>
 
-        <div class="space-y-2">
-          <label for="Fuel Cost" class="font-semibold text-sm">Fuel Cost <span class="text-red-500">*</span></label>
-          <input class="form-input" type="number" placeholder="Fuel Cost" required>
-        </div>
+      <div class="space-y-2">
+        <label for="Fuel Cost" class="font-semibold text-sm form-label">Fuel Cost <span
+            class="text-red-500">*</span></label>
+        <input class="form-input" id="fuel_cost" type="number" placeholder="Fuel Cost" required>
+      </div>
 
-        <div>
-          <button class="bg-green-600 rounded text-white text-md font-semibold px-4 py-2 w-full">Calculate</button>
-        </div>
+      <div>
+        <button
+          class="bg-green-600 rounded text-white text-md font-semibold px-4 py-2 w-full  hover:shadow-lg  hover:scale-105">Calculate</button>
+      </div>
+
+      <div class="min-[320px]:text-center min-[320px]:text-sm space-y-2 font-semibold text-lg show hidden">
+        <h2>Your fuel cost will be around: <span class="text-green-600"></span></h2>
+      </div>
+
+
 
     </div>
   </div>
-
+  <script src="assets/css/js/main.js"></script>
 </body>
 
 </html>
