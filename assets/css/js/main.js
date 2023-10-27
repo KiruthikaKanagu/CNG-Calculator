@@ -14,7 +14,7 @@ button.addEventListener("click", (event) => {
         const fuelCostEl = fuelCost.value;
         const calculate = (distanceKM / fuelEfficiencyEl) * fuelCostEl;
         document.querySelector(".show").classList.remove("hidden");
-        show.innerText = "₹ " + calculate;
+        show.innerText ="$"+  calculate;
     }
 });
 
